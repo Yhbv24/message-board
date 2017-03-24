@@ -10,3 +10,13 @@
   display: inline;
   list-style: none;
 }
+
+.question-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.question_form {
+  padding-left: 10px;
+  padding-right: 10px;
+}

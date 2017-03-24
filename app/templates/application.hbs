@@ -10,6 +10,7 @@
     <div class="container-fluid">
       <ul class="nav navbar-nav">
         <li>{{#link-to "index"}}Home{{/link-to}}</li>
+        <li>{{#link-to "ask-question"}}Ask Question{{/link-to}}</li>
         <li>{{#link-to "about"}}About Us{{/link-to}}</li>
         <li>{{#link-to "contact"}}Contact Us{{/link-to}}</li>
       </ul>
@@ -17,7 +18,9 @@
   </nav>
 
   <body>
-    {{outlet}}
+    <div class="question-container">
+      {{outlet}}
+    </div>
     <hr>
   </body>
 
