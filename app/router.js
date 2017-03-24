@@ -10,7 +10,8 @@ Router.map(function() {
   this.route('contact');
   this.route('about');
   this.route('ask-question');
-  // this.route('question', {path: '/question/:question_id'}););
+  this.route('question', {path: '/question/:question_id'});
+  this.route('delete-question');
 });
 
 export default Router;
