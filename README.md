@@ -62,6 +62,10 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 
+## Current Bugs
+
+* Answers will add to the database, but will not connect to the question for which the answer was written.
+
 ## Running / Development
 
 * `ember serve`
