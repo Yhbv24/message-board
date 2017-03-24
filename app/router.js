@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('ask-question');
   this.route('question', {path: '/question/:question_id'});
   this.route('delete-question');
+  this.route('update-question');
 });
 
 export default Router;

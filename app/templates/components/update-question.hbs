@@ -1,0 +1,17 @@
+<div class="update_question_form">
+  <form>
+    <label for="title">Question Title:</label>
+    {{input type="text" value=title class="form-control" placeholder="e.g. how do I post?"}}<br>
+
+    <label for="body">Detailed Question:</label>
+    {{textarea value=body class="form-control" placeholder="e.g. i am trying to post..."}}<br>
+
+    <label for="author">Your Name:</label>
+    {{input type="text" value=author class="form-control" placeholder="e.g. john c. questioner"}}<br>
+
+    <div class="center">
+      <button {{action "updateQuestion" model.question}} class="btn btn-sm">Update</button>
+      <button {{action "hideUpdateForm"}} class="btn btn-sm">Close</button>
+    </div>
+  </form>
+</div>
