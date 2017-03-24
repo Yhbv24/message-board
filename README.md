@@ -8,7 +8,7 @@ Welcome to the Message Board. This app will allow users to post questions, and o
 
 * JavaScript
 * Ember JS
-* CSS
+* CSS & SASS
 * HTML
 * Bootstrap
 
@@ -53,6 +53,7 @@ You will need the following things properly installed on your computer.
 * [Bower](https://bower.io/)
 * [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* [SASS](http://sass-lang.com/)
 
 ## Installation
 

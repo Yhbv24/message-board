@@ -1,9 +1,10 @@
+{{#if isShowing}}
 <div class="update_question_form">
   <form>
-    <label for="title">Question Title:</label>
+    <label for="title">New Title:</label>
     {{input type="text" value=title class="form-control" placeholder="e.g. how do I post?"}}<br>
 
-    <label for="body">Detailed Question:</label>
+    <label for="body">New Question:</label>
     {{textarea value=body class="form-control" placeholder="e.g. i am trying to post..."}}<br>
 
     <label for="author">Your Name:</label>
@@ -11,7 +12,10 @@
 
     <div class="center">
       <button {{action "updateQuestion" model.question}} class="btn btn-sm">Update</button>
-      <button {{action "hideUpdateForm"}} class="btn btn-sm">Close</button>
+      <button {{action "hideForm"}} class="btn btn-sm">Close</button>
     </div>
   </form>
 </div>
+{{else}}
+  <button {{action "showForm"}} class="btn btn-sm">Click to Update</button>
+{{/if}}
