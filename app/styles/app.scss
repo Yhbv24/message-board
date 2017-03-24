@@ -4,6 +4,10 @@
 
 .jumbotron {
   margin-top: 30px;
+
+  h4 {
+    line-height: 1.4em;
+  }
 }
 
 .footer li {
@@ -19,4 +23,10 @@
 .question_form {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@import "ember-bootstrap/bootstrap";
+
+body {
+  font-family: 'Carme', sans-serif;
 }

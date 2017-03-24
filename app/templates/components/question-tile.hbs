@@ -1,6 +1,13 @@
 <div class="question_tile">
-  <h4>{{question.title}}</h4>
-  <p>{{question.body}}</p>
-  <h6>Posted by: {{question.author}}</h6>
-  <br>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      {{question.title}}
+    </div>
+    <div class="panel-body">
+      {{question.body}}
+    </div>
+    <div class="panel-footer">
+      Posted by: {{question.author}}
+    </div>
+  </div>
 </div>

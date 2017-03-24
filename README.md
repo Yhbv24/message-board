@@ -30,6 +30,7 @@ The primary goals of this project are to familiarize myself with the Ember frame
       * question
       * answer
       * index
+      * delete (dynamic route)
 
    * Components
       * question-tile
@@ -38,8 +39,10 @@ The primary goals of this project are to familiarize myself with the Ember frame
    * Templates
       * question-form
       * answer-form
-
-
+7. Integrate SASS
+8. Add dynamic route to individual question
+   * From here, allow user to edit and/or delete question
+9. Add ability to leave answers for questions
 
 ## Prerequisites
 
