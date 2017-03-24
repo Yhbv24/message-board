@@ -13,11 +13,13 @@
 </div>
 
 <div class="answer_tile">
-  {{model.answer.title}}
+  {{#each model.question.answer as |answer|}}
+    {{answer.title}}
+  {{/each}}
 </div>
 
 {{delete-question model=model deleteQuestion="deleteQuestion"}}
 {{update-question model=model updateQuestion="updateQuestion"}}
 
 Answer:
-{{add-answer question=model addAnswer="addAnswer"}}
+{{add-answer question=model.question answer=model.answer addAnswer="addAnswer"}}

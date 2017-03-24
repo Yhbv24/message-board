@@ -9,7 +9,7 @@
   {{input type="text" value=answer_author class="form-control" placeholder="e.g. megan g. answerer"}}<br>
 
   <div class="center">
-    <button {{action "addAnswer" model.question model.answer}} class="btn btn-sm">Answer!</button>
+    <button {{action "addAnswer" question answer}} class="btn btn-sm">Answer!</button>
     <button {{action "hideForm"}} class="btn btn-sm">Close</button>
   </div>
 </form>
