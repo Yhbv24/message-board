@@ -1,5 +1,5 @@
-<h4>{{model.title}}</h4>
-<p>{{model.body}}</p>
-<h6>Posted by: {{model.author}}</h6>
+<h4>{{model.question.title}}</h4>
+<p>{{model.question.body}}</p>
+<h6>Posted by: {{model.question.author}}</h6>
 
-{{delete-question question=model deleteQuestion="deleteQuestion"}}
+{{delete-question model=model deleteQuestion="deleteQuestion"}}

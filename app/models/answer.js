@@ -4,5 +4,5 @@ export default DS.Model.extend({
   author: DS.attr(),
   body: DS.attr(),
   title: DS.attr(),
-  // answers: hasMany("answer", {async = true})
+  // question: belongsTo("question", {async: true})
 });
