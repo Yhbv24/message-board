@@ -1,0 +1,15 @@
+<form>
+  <label for="title">Answer Title:</label>
+  {{input type="text" value=answer_title class="form-control" placeholder="e.g. do this..."}}<br>
+
+  <label for="body">Answer:</label>
+  {{textarea value=answer_body class="form-control" placeholder="e.g. all you need to do is..."}}<br>
+
+  <label for="author">Your Name:</label>
+  {{input type="text" value=answer_author class="form-control" placeholder="e.g. megan g. answerer"}}<br>
+
+  <div class="center">
+    <button {{action "addAnswer" model.question model.answer}} class="btn btn-sm">Answer!</button>
+    <button {{action "hideForm"}} class="btn btn-sm">Close</button>
+  </div>
+</form>

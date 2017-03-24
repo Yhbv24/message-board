@@ -1,6 +1,23 @@
-<h4>{{model.question.title}}</h4>
-<p>{{model.question.body}}</p>
-<h6>Posted by: {{model.question.author}}</h6>
+<div class="question_tile">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      Question: {{model.question.title}}
+    </div>
+    <div class="panel-body">
+      {{model.question.body}}
+    </div>
+    <div class="panel-footer">
+      Posted by: {{model.question.author}}
+    </div>
+  </div>
+</div>
 
-{{update-question model=model updateQuestion="updateQuestion"}}
+<div class="answer_tile">
+  {{model.answer.title}}
+</div>
+
 {{delete-question model=model deleteQuestion="deleteQuestion"}}
+{{update-question model=model updateQuestion="updateQuestion"}}
+
+Answer:
+{{add-answer question=model addAnswer="addAnswer"}}
